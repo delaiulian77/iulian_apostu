@@ -42,6 +42,17 @@
     .section {
       margin-bottom: 40px;
     }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
     footer {
       text-align: center;
       padding: 10px;
@@ -63,7 +74,7 @@
   <div class="container">
     <div class="section" id="about">
       <h2>About Me</h2>
-      <p>Hello! I'm Iulian Apostu, a civil engineer with experience in quality assurance, facility operations, and project management. I currently contribute to the construction of one of Europe’s largest new hospital, in Odense, Denmark. I'm passionate about continuous improvement, sustainability, and technology.</p>
+      <p>Hello! I'm Iulian Apostu, a civil engineer with experience in quality assurance, facility operations, and project management. I currently contribute to the construction of <a href="#gallery">one of Europe’s largest new hospitals (OUH)</a>, in Odense, Denmark. I'm passionate about continuous improvement, sustainability, and technology.</p>
     </div>
 
     <div class="section" id="career">
@@ -72,12 +83,25 @@
         <li>QA/QC Lead at Odense Hospital Project Team (2023–Present)</li>
         <li>Facilities Manager & Project Manager at Artifex SRL</li>
         <li>Project & Sales Manager roles across Romania</li>
-        </ul>
+      </ul>
     </div>
 
     <div class="section" id="skills">
       <h2>Skills & Certifications</h2>
       <p>Preventive Maintenance · Root Cause Analysis · Quality Engineering · SAP ERP · ISO 9001 Lead Auditor · Agile · Advanced Excel</p>
+    </div>
+
+    <div class="section" id="gallery">
+      <h2>OUH Project Photos</h2>
+      <div class="gallery">
+        <img src="DJI_0557.JPG" alt="OUH 1">
+        <img src="DJI_0561.JPG" alt="OUH 2">
+        <img src="DJI_0573.JPG" alt="OUH 3">
+        <img src="DJI_0575.JPG" alt="OUH 4">
+        <img src="DJI_0603.JPG" alt="OUH 5">
+        <img src="DJI_0605.JPG" alt="OUH 6">
+        <img src="DJI_0607.JPG" alt="OUH 7">
+      </div>
     </div>
 
     <div class="section" id="contact">
