@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iulian Apostu - Civil Engineer & QA Expert</title>
-  <style>
+    <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -19,19 +19,14 @@
       padding: 20px;
       width: 250px;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
     aside img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 20%;
-  margin-bottom: 10px;
-  transform: scale(0.8);
-}
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
     main {
       flex: 1;
       padding: 20px;
@@ -53,37 +48,10 @@
       gap: 10px;
     }
     .gallery img {
-  width: 100%;
-  max-width: 280px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-    }
-    #lightboxOverlay {
-      position: fixed;
-      top: 0; left: 0;
       width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.8);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 999;
-    }
-    #lightboxOverlay img {
-      max-width: 90%;
-      max-height: 90%;
-    }
-    .closeBtn {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      color: white;
-      font-size: 36px;
-      cursor: pointer;
+      max-width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     footer {
       text-align: center;
@@ -95,7 +63,7 @@
 </head>
 <body>
   <aside>
-    <a href="private.html"><img src="IA.jpg" alt="Iulian Apostu"></a>
+    <img src="IA.jpg" alt="Iulian Apostu">
     <h1>Iulian Apostu</h1>
     <p>Civil Engineer<br>Quality & Project Management<br>Sustainability Enthusiast</p>
   </aside>
@@ -123,10 +91,14 @@
     <div class="section" id="gallery">
       <h2>OUH Project Photos</h2>
       <div class="gallery">
-  <a href="family1.jpg" class="lightbox"><img src="family1.jpg" alt="Family 1"></a>
-  <a href="family2.jpg" class="lightbox"><img src="family2.jpg" alt="Family 2"></a>
-  <a href="family3.jpg" class="lightbox"><img src="family3.jpg" alt="Family 3"></a>
-</div>
+        <img src="DJI_0557.JPG" alt="OUH 1">
+        <img src="DJI_0561.JPG" alt="OUH 2">
+        <img src="DJI_0573.JPG" alt="OUH 3">
+        <img src="DJI_0575.JPG" alt="OUH 4">
+        <img src="DJI_0603.JPG" alt="OUH 5">
+        <img src="DJI_0605.JPG" alt="OUH 6">
+        <img src="DJI_0607.JPG" alt="OUH 7">
+      </div>
     </div>
 
     <div class="section" id="contact">
@@ -139,38 +111,5 @@
       &copy; 2025 Iulian Apostu
     </footer>
   </main>
-
-  <div id="lightboxOverlay">
-    <span class="closeBtn">&times;</span>
-    <img id="lightboxImg" src="" alt="Enlarged view">
-  </div>
-
-  <script>
-    const lightboxLinks = document.querySelectorAll('.lightbox');
-    const overlay = document.getElementById('lightboxOverlay');
-    const lightboxImg = document.getElementById('lightboxImg');
-    const closeBtn = document.querySelector('.closeBtn');
-
-    lightboxLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const imgSrc = this.getAttribute('href');
-        lightboxImg.src = imgSrc;
-        overlay.style.display = 'flex';
-      });
-    });
-
-    closeBtn.addEventListener('click', function() {
-      overlay.style.display = 'none';
-      lightboxImg.src = '';
-    });
-
-    overlay.addEventListener('click', function(e) {
-      if (e.target === overlay) {
-        overlay.style.display = 'none';
-        lightboxImg.src = '';
-      }
-    });
-  </script>
 </body>
 </html>
