@@ -3,82 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iulian Apostu - Civil Engineer & QA Expert</title>
+  <title>Artifex Experience</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       background-color: #f4f4f4;
-      display: flex;
-      flex-direction: row;
     }
-    aside {
-      background: #ddd;
+    header {
+      background-color: #007acc;
+      color: white;
       padding: 20px;
-      width: 250px;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
-    aside img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 0%;
-  margin-bottom: 100px;
-  transform: scale(0.95);
-}
-    main {
-      flex: 1;
+    .content {
       padding: 20px;
-      background: #fff;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    .section {
-      margin-bottom: 40px;
+      max-width: 1000px;
+      margin: auto;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      justify-content: center;
     }
     .gallery img {
-  width: 100%;
-  max-width: 280px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
+      width: 100%;
+      max-width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
     }
     #lightboxOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-
-}
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
     #lightboxOverlay img {
-  max-width: 90%;
-  max-height: 90%;
- }
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
     .closeBtn {
       position: absolute;
       top: 20px;
@@ -87,104 +63,78 @@
       font-size: 36px;
       cursor: pointer;
     }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #333;
-      color: white;
+    a.back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
     }
-  @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-</style>
+  </style>
 </head>
 <body>
-  <aside>
-    <a href="private.html"><img src="IA.jpg" alt="Iulian Apostu"></a>
-    <h1>Iulian Apostu</h1>
-    <p>Civil Engineer<br>Quality & Project Management<br>Sustainability Enthusiast</p>
-  </aside>
+  <header>
+    <h1>My Role at Artifex</h1>
+  </header>
+  <div class="content">
+    <p>During my time at Artifex, I worked as a Facilities Manager and Project Manager. I was responsible for coordinating operational activities, managing technical maintenance, and ensuring quality and safety standards across the site. This included infrastructure upgrades, process optimization, and supporting production through technical planning and supervision. My role also involved leading sustainability efforts and ISO compliance.</p>
 
-  <main>
-    <div class="section" id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Iulian Apostu, a civil engineer with experience in quality assurance, facility operations, and project management. I currently contribute to the construction of <a href="#gallery">one of Europe’s largest new hospitals (OUH)</a>, in Odense, Denmark. I'm passionate about continuous improvement, sustainability, and technology.</p>
+    <div class="gallery">
+      <a href="art1.jpg" class="lightbox"><img src="art1.jpg" alt="Artifex 1"></a>
+      <a href="art2.jpg" class="lightbox"><img src="art2.jpg" alt="Artifex 2"></a>
+      <a href="art3.jpg" class="lightbox"><img src="art3.jpg" alt="Artifex 3"></a>
+      <a href="art4.jpg" class="lightbox"><img src="art4.jpg" alt="Artifex 4"></a>
+      <a href="art5.jpg" class="lightbox"><img src="art5.jpg" alt="Artifex 5"></a>
+      <a href="art6.jpg" class="lightbox"><img src="art6.jpg" alt="Artifex 6"></a>
+      <a href="art7.jpg" class="lightbox"><img src="art7.jpg" alt="Artifex 7"></a>
+      <a href="art8.jpg" class="lightbox"><img src="art8.jpg" alt="Artifex 8"></a>
+      <a href="art9.jpg" class="lightbox"><img src="art9.jpg" alt="Artifex 9"></a>
+      <a href="art10.jpg" class="lightbox"><img src="art10.jpg" alt="Artifex 10"></a>
+      <a href="art11.jpg" class="lightbox"><img src="art11.jpg" alt="Artifex 11"></a>
+      <a href="art12.jpg" class="lightbox"><img src="art12.jpg" alt="Artifex 12"></a>
+      <a href="art13.jpg" class="lightbox"><img src="art13.jpg" alt="Artifex 13"></a>
+      <a href="art14.jpg" class="lightbox"><img src="art14.jpg" alt="Artifex 14"></a>
+      <a href="art15.jpg" class="lightbox"><img src="art15.jpg" alt="Artifex 15"></a>
+      <a href="art16.jpg" class="lightbox"><img src="art16.jpg" alt="Artifex 16"></a>
+      <a href="art17.jpg" class="lightbox"><img src="art17.jpg" alt="Artifex 17"></a>
+      <a href="art18.jpg" class="lightbox"><img src="art18.jpg" alt="Artifex 18"></a>
+      <a href="art19.jpg" class="lightbox"><img src="art19.jpg" alt="Artifex 19"></a>
+      <a href="art20.jpg" class="lightbox"><img src="art20.jpg" alt="Artifex 20"></a>
     </div>
 
-    <div class="section" id="career">
-      <h2>Career Highlights</h2>
-      <ul>
-        <li>QA/QC Lead at Odense Hospital Project Team (2023–Present)</li>
-        <li>Facilities Manager & Project Manager at <a href="artifex.html" target="_blank">Artifex SRL</a>
-L</li>
-        <li>Project & Sales Manager roles across Romania</li>
-      </ul>
-    </div>
+    <a href="index.html" class="back-link">← Back to main page</a>
+  </div>
 
-    <div class="section" id="skills">
-      <h2>Skills & Certifications</h2>
-      <p>Preventive Maintenance · Root Cause Analysis · Quality Engineering · SAP ERP · ISO 9001 Lead Auditor · Agile · Advanced Excel</p>
-    </div>
-
-    <div class="section" id="gallery">
-  <h2>OUH Project Photos</h2>
-  <div class="gallery">
-  <a href="DJI_0557.JPG" class="lightbox"><img src="DJI_0557.JPG" alt="OUH 1"></a>
-  <a href="DJI_0561.JPG" class="lightbox"><img src="DJI_0561.JPG" alt="OUH 2"></a>
-  <a href="DJI_0573.JPG" class="lightbox"><img src="DJI_0573.JPG" alt="OUH 3"></a>
-  <a href="DJI_0575.JPG" class="lightbox"><img src="DJI_0575.JPG" alt="OUH 4"></a>
-  <a href="DJI_0603.JPG" class="lightbox"><img src="DJI_0603.JPG" alt="OUH 5"></a>
-  <a href="DJI_0605.JPG" class="lightbox"><img src="DJI_0605.JPG" alt="OUH 6"></a>
-  <a href="DJI_0607.JPG" class="lightbox"><img src="DJI_0607.JPG" alt="OUH 7"></a>
-</div>
-</div>
-
-    <div class="section" id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:iulian.apostu@gmail.com">iulian.apostu@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/iulian-apostu">linkedin.com/in/iulian-apostu</a></p>
-      <p>Location: Vejle, Denmark</p>
-    </div>
-    <footer>
-      &copy; 2025 Iulian Apostu
-    </footer>
-  </main>
-
-   <div id="lightboxOverlay">
+  <div id="lightboxOverlay">
     <span class="closeBtn">&times;</span>
-    <img id="lightboxImg" src="" alt="Full view">
+    <img id="lightboxImg" src="" alt="">
   </div>
 
   <script>
-   
-      const lightboxLinks = document.querySelectorAll(".lightbox");
-      const overlay = document.getElementById("lightboxOverlay");
-      const lightboxImg = document.getElementById("lightboxImg");
-      const closeBtn = document.querySelector(".closeBtn");
+    const lightboxLinks = document.querySelectorAll('.lightbox');
+    const overlay = document.getElementById('lightboxOverlay');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.querySelector('.closeBtn');
 
-      lightboxLinks.forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          const imgSrc = this.getAttribute("href");
-          lightboxImg.src = imgSrc;
-          overlay.style.display = "flex";
-        });
-      });
-
-      closeBtn.addEventListener("click", function () {
-        overlay.style.display = "none";
-        lightboxImg.src = "";
-      });
-
-      overlay.addEventListener("click", function (e) {
-        if (e.target === overlay) {
-          overlay.style.display = "none";
-          lightboxImg.src = "";
-        }
+    lightboxLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        lightboxImg.src = this.href;
+        overlay.style.display = 'flex';
       });
     });
-  </script>
 
+    closeBtn.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      lightboxImg.src = '';
+    });
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        overlay.style.display = 'none';
+        lightboxImg.src = '';
+      }
+    });
+  </script>
 </body>
 </html>
