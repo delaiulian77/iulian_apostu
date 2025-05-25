@@ -29,7 +29,7 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center 0%;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   transform: scale(0.95);
 }
     main {
@@ -76,14 +76,9 @@
 
 }
     #lightboxOverlay img {
-  max-width: 90vw;
-  max-height: 90vh;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-  margin: auto;
-  display: block;
-}
+  max-width: 90%;
+  max-height: 90%;
+ }
     .closeBtn {
       position: absolute;
       top: 20px;
@@ -161,7 +156,7 @@
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+   
       const lightboxLinks = document.querySelectorAll(".lightbox");
       const overlay = document.getElementById("lightboxOverlay");
       const lightboxImg = document.getElementById("lightboxImg");
