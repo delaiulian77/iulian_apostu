@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    #lightboxOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #lightboxOverlay img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .closeBtn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 36px;
+      cursor: pointer;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Some of the projects where i was PM</h1>
+  </header>
+  <div class="content">
+    <p>As a project manager, I have overseen multidisciplinary teams, managed technical and financial aspects of construction and maintenance projects, and implemented structured methodologies to streamline workflows and decision-making.</p>
+
+    <div class="gallery">
+      <a href="a01.jpg" class="lightbox"><img src="a01.jpg" alt="Portfolio 1"></a>
+      <a href="a02.jpg" class="lightbox"><img src="a02.jpg" alt="Portfolio 2"></a>
+      <a href="a03.jpg" class="lightbox"><img src="a03.jpg" alt="Portfolio 3"></a>
+      <a href="a04.jpg" class="lightbox"><img src="a04.jpg" alt="Portfolio 4"></a>
+      <a href="a05.jpg" class="lightbox"><img src="a05.jpg" alt="Portfolio 5"></a>
+      <a href="art6.jpg" class="lightbox"><img src="a06.jpg" alt="Portfolio 6"></a>
+      <a href="a07.jpg" class="lightbox"><img src="a07.jpg" alt="Portfolio 7"></a>
+      <a href="a08.jpg" class="lightbox"><img src="a08.jpg" alt="Portfolio 8"></a>
+      <a href="a09.jpg" class="lightbox"><img src="a09.jpg" alt="Portfolio 9"></a>
+      <a href="a10.jpg" class="lightbox"><img src="a10.jpg" alt="Portfolio 10"></a>
+      <a href="a11.jpg" class="lightbox"><img src="a11.jpg" alt="Portfolio 11"></a>
+      <a href="a111.jpg" class="lightbox"><img src="a111.jpg" alt="Portfolio 12"></a>
+      <a href="a12.jpg" class="lightbox"><img src="a12.jpg" alt="Portfolio 13"></a>
+      <a href="a13.jpg" class="lightbox"><img src="a13.jpg" alt="Portfolio 14"></a>
+      <a href="a14.jpg" class="lightbox"><img src="a14.jpg" alt="Portfolio 15"></a>
+      <a href="a15.jpg" class="lightbox"><img src="a15.jpg" alt="Portfolio 16"></a>
+      <a href="a16.jpg" class="lightbox"><img src="a16.jpg" alt="Portfolio 17"></a>
+      <a href="a17.jpg" class="lightbox"><img src="a17.jpg" alt="Portfolio 18"></a>
+      <a href="a18.jpg" class="lightbox"><img src="a18.jpg" alt="Portfolio 19"></a>
+      <a href="a19.jpg" class="lightbox"><img src="a19.jpg" alt="Portfolio 20"></a>
+      <a href="a20.jpg" class="lightbox"><img src="a20.jpg" alt="Portfolio 21"></a>
+      <a href="a21.jpg" class="lightbox"><img src="a21.jpg" alt="Portfolio 22"></a>
+      <a href="a22.jpg" class="lightbox"><img src="a22.jpg" alt="Portfolio 23"></a>
+      <a href="a23.jpg" class="lightbox"><img src="a23.jpg" alt="Portfolio 24"></a>
+      <a href="a231.jpg" class="lightbox"><img src="a231.jpg" alt="Portfolio 25"></a>
+      <a href="a24.jpg" class="lightbox"><img src="a24.jpg" alt="Portfolio 26"></a>
+      <a href="a25.jpg" class="lightbox"><img src="a25.jpg" alt="Portfolio 27"></a>
+      <a href="a26.jpg" class="lightbox"><img src="a26.jpg" alt="Portfolio 28"></a>
+      <a href="a27.jpg" class="lightbox"><img src="a27.jpg" alt="Portfolio 29"></a>
+      <a href="a28.jpg" class="lightbox"><img src="a28.jpg" alt="Portfolio 30"></a>
+      <a href="a29.jpg" class="lightbox"><img src="a29.jpg" alt="Portfolio 31"></a>
+      <a href="a30.jpg" class="lightbox"><img src="a30.jpg" alt="Portfolio 32"></a>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to main page</a>
+  </div>
+
+  <div id="lightboxOverlay">
+    <span class="closeBtn">&times;</span>
+    <img id="lightboxImg" src="" alt="Full view">
+  </div>
+
+  <script>
+    const lightboxLinks = document.querySelectorAll('.lightbox');
+    const overlay = document.getElementById('lightboxOverlay');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.querySelector('.closeBtn');
+
+    lightboxLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        lightboxImg.src = this.href;
+        overlay.style.display = 'flex';
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      lightboxImg.src = '';
+    });
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        overlay.style.display = 'none';
+        lightboxImg.src = '';
+      }
+    });
+  </script>
+</body>
+</html>
